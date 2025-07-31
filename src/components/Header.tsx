@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Bell, User, Settings, ChevronDown } from 'lucide-react';
+import { Search, Bell, User, Settings, ChevronDown, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { ThemeToggle } from './ThemeToggle';
 
 const roles = [
   { id: 'hr-manager', name: 'HR Manager', permissions: ['full-access'] },
@@ -47,6 +48,9 @@ export function Header() {
 
         {/* Right section */}
         <div className="flex items-center gap-4">
+          {/* Theme Toggle */}
+          <ThemeToggle />
+          
           {/* Role Selector */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -124,6 +128,3 @@ export function Header() {
     </header>
   );
 }
-
-// Fix the import error for Shield icon
-import { Shield } from 'lucide-react';
