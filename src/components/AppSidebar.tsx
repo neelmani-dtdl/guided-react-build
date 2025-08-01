@@ -10,7 +10,8 @@ import {
   TrendingUp,
   Database,
   MessageSquare,
-  Shield
+  Shield,
+  Bot
 } from 'lucide-react';
 import {
   Sidebar,
@@ -32,6 +33,7 @@ const navigationItems = [
   { title: 'Analytics', url: '/analytics', icon: TrendingUp },
   { title: 'Alerts & Nudges', url: '/alerts', icon: AlertTriangle },
   { title: 'NLP Queries', url: '/queries', icon: MessageSquare },
+  { title: 'AI Assistant', url: '/chatbot', icon: Bot },
   { title: 'Data Sources', url: '/sources', icon: Database },
   { title: 'Access Control', url: '/access', icon: Shield },
   { title: 'Settings', url: '/settings', icon: Settings },

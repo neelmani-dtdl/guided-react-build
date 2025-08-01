@@ -10,6 +10,7 @@ import { AIInsightsPage } from "./components/AIInsightsPage";
 import { AnalyticsPage } from "./components/AnalyticsPage";
 import { AlertsPage } from "./components/AlertsPage";
 import { NLPQueriesPage } from "./components/NLPQueriesPage";
+import { ChatbotPage } from "./components/ChatbotPage";
 import { DataSourcesPage } from "./components/DataSourcesPage";
 import { AccessControlPage } from "./components/AccessControlPage";
 import { ThemeProvider } from "./components/ThemeProvider";
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="analytics" element={<AnalyticsPage />} />
               <Route path="alerts" element={<AlertsPage />} />
               <Route path="queries" element={<NLPQueriesPage />} />
+              <Route path="chatbot" element={<ChatbotPage />} />
               <Route path="sources" element={<DataSourcesPage />} />
               <Route path="access" element={<AccessControlPage />} />
               <Route path="settings" element={<div className="p-6"><h1>Settings - Coming Soon</h1></div>} />

@@ -127,9 +127,9 @@ export function DataSourcesPage() {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'connected': return 'success';
-      case 'syncing': return 'warning';
-      case 'warning': return 'warning';
+      case 'connected': return 'secondary';
+      case 'syncing': return 'outline';
+      case 'warning': return 'destructive';
       case 'disconnected': return 'destructive';
       default: return 'secondary';
     }
